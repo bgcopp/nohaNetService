@@ -1,0 +1,19 @@
+G:\soluciones\serv\SRC\NOHAService\bin\Debug\NOHAService.exe.config
+G:\soluciones\serv\SRC\NOHAService\bin\Debug\NOHAService.exe
+G:\soluciones\serv\SRC\NOHAService\bin\Debug\NOHAService.pdb
+G:\soluciones\serv\SRC\NOHAService\bin\Debug\Topshelf.dll
+G:\soluciones\serv\SRC\NOHAService\bin\Debug\Topshelf.xml
+G:\soluciones\serv\SRC\NOHAService\obj\Debug\NOHAService.csprojResolveAssemblyReference.cache
+G:\soluciones\serv\SRC\NOHAService\obj\Debug\NOHAService.exe
+G:\soluciones\serv\SRC\NOHAService\obj\Debug\NOHAService.pdb
+C:\Soluciones\ed proteccion\OC\serv\SRC\NOHAService\bin\Debug\NOHAService.exe.config
+C:\Soluciones\ed proteccion\OC\serv\SRC\NOHAService\bin\Debug\NOHAService.exe
+C:\Soluciones\ed proteccion\OC\serv\SRC\NOHAService\bin\Debug\NOHAService.pdb
+C:\Soluciones\ed proteccion\OC\serv\SRC\NOHAService\bin\Debug\Topshelf.dll
+C:\Soluciones\ed proteccion\OC\serv\SRC\NOHAService\bin\Debug\Topshelf.xml
+C:\Soluciones\ed proteccion\OC\serv\SRC\NOHAService\obj\Debug\NOHAService.csproj.AssemblyReference.cache
+C:\Soluciones\ed proteccion\OC\serv\SRC\NOHAService\obj\Debug\NOHAService.csproj.SuggestedBindingRedirects.cache
+C:\Soluciones\ed proteccion\OC\serv\SRC\NOHAService\obj\Debug\NOHAService.csproj.CoreCompileInputs.cache
+C:\Soluciones\ed proteccion\OC\serv\SRC\NOHAService\obj\Debug\NOHAService.csproj.CopyComplete
+C:\Soluciones\ed proteccion\OC\serv\SRC\NOHAService\obj\Debug\NOHAService.exe
+C:\Soluciones\ed proteccion\OC\serv\SRC\NOHAService\obj\Debug\NOHAService.pdb

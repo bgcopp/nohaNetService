@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="masterDBACModelStoreContainer" CdmEntityContainer="masterDBACEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="masterDBACModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCargo">
+      <EntityTypeMapping TypeName="masterDBACModel.TCargo">
+        <MappingFragment StoreEntitySet="TCargo">
+          <ScalarProperty Name="idCargo" ColumnName="idCargo" />
+          <ScalarProperty Name="NombreCargo" ColumnName="NombreCargo" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TDiasHorario">
+      <EntityTypeMapping TypeName="masterDBACModel.TDiasHorario">
+        <MappingFragment StoreEntitySet="TDiasHorario">
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="idDiasHorario" ColumnName="idDiasHorario" />
+          <ScalarProperty Name="idHorario" ColumnName="idHorario" />
+          <ScalarProperty Name="dia" ColumnName="dia" />
+          <ScalarProperty Name="entrada" ColumnName="entrada" />
+          <ScalarProperty Name="salida" ColumnName="salida" />
+          <ScalarProperty Name="ObservacionesDia" ColumnName="ObservacionesDia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TDivisionEmpresa">
+      <EntityTypeMapping TypeName="masterDBACModel.TDivisionEmpresa">
+        <MappingFragment StoreEntitySet="TDivisionEmpresa">
+          <ScalarProperty Name="piso" ColumnName="piso" />
+          <ScalarProperty Name="IdDivisionEmpresa" ColumnName="IdDivisionEmpresa" />
+          <ScalarProperty Name="IdEmpresa" ColumnName="IdEmpresa" />
+          <ScalarProperty Name="NombreDivision" ColumnName="NombreDivision" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEmpleado">
+      <EntityTypeMapping TypeName="masterDBACModel.TEmpleado">
+        <MappingFragment StoreEntitySet="TEmpleado">
+          <ScalarProperty Name="idTarjeta" ColumnName="idTarjeta" />
+          <ScalarProperty Name="usuarioHuella" ColumnName="usuarioHuella" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="idTipoIdentificacion" ColumnName="idTipoIdentificacion" />
+          <ScalarProperty Name="identificacion" ColumnName="identificacion" />
+          <ScalarProperty Name="Notarjeta" ColumnName="Notarjeta" />
+          <ScalarProperty Name="foto" ColumnName="foto" />
+          <ScalarProperty Name="idCargo" ColumnName="idCargo" />
+          <ScalarProperty Name="idTipoEstado" ColumnName="idTipoEstado" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="idDivisionEmpresa" ColumnName="idDivisionEmpresa" />
+          <ScalarProperty Name="idHorario" ColumnName="idHorario" />
+          <ScalarProperty Name="observaciones" ColumnName="observaciones" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEmpleadoVehiculo">
+      <EntityTypeMapping TypeName="masterDBACModel.TEmpleadoVehiculo">
+        <MappingFragment StoreEntitySet="TEmpleadoVehiculo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+          <ScalarProperty Name="IdVehiculo" ColumnName="IdVehiculo" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEmpresa">
+      <EntityTypeMapping TypeName="masterDBACModel.TEmpresa">
+        <MappingFragment StoreEntitySet="TEmpresa">
+          <ScalarProperty Name="CargoContacto" ColumnName="CargoContacto" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="nit" ColumnName="nit" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="telefonos" ColumnName="telefonos" />
+          <ScalarProperty Name="telContactoInterno" ColumnName="telContactoInterno" />
+          <ScalarProperty Name="EmpleadoContacto" ColumnName="EmpleadoContacto" />
+          <ScalarProperty Name="ObservacioneEmpresa" ColumnName="ObservacioneEmpresa" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEmpresaVisitante">
+      <EntityTypeMapping TypeName="masterDBACModel.TEmpresaVisitante">
+        <MappingFragment StoreEntitySet="TEmpresaVisitante">
+          <ScalarProperty Name="idEmpresaVisitante" ColumnName="idEmpresaVisitante" />
+          <ScalarProperty Name="razonSocialEV" ColumnName="razonSocialEV" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEstado">
+      <EntityTypeMapping TypeName="masterDBACModel.TEstado">
+        <MappingFragment StoreEntitySet="TEstado">
+          <ScalarProperty Name="idTipoEstado" ColumnName="idTipoEstado" />
+          <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TFestivos">
+      <EntityTypeMapping TypeName="masterDBACModel.TFestivos">
+        <MappingFragment StoreEntitySet="TFestivos">
+          <ScalarProperty Name="idFestivo" ColumnName="idFestivo" />
+          <ScalarProperty Name="fechaFestivo" ColumnName="fechaFestivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THorario">
+      <EntityTypeMapping TypeName="masterDBACModel.THorario">
+        <MappingFragment StoreEntitySet="THorario">
+          <ScalarProperty Name="esPermanente" ColumnName="esPermanente" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="idHorario" ColumnName="idHorario" />
+          <ScalarProperty Name="NombreHorario" ColumnName="NombreHorario" />
+          <ScalarProperty Name="esMaestro" ColumnName="esMaestro" />
+          <ScalarProperty Name="fechaInicio" ColumnName="fechaInicio" />
+          <ScalarProperty Name="fechaFin" ColumnName="fechaFin" />
+          <ScalarProperty Name="ObservacionesHorario" ColumnName="ObservacionesHorario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoVehiculo">
+      <EntityTypeMapping TypeName="masterDBACModel.TipoVehiculo">
+        <MappingFragment StoreEntitySet="TipoVehiculo">
+          <ScalarProperty Name="idTipoVehiculo" ColumnName="idTipoVehiculo" />
+          <ScalarProperty Name="NombreTipoVehiculo" ColumnName="NombreTipoVehiculo" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TMarcaVehiculo">
+      <EntityTypeMapping TypeName="masterDBACModel.TMarcaVehiculo">
+        <MappingFragment StoreEntitySet="TMarcaVehiculo">
+          <ScalarProperty Name="idMarcaVehiculo" ColumnName="idMarcaVehiculo" />
+          <ScalarProperty Name="NombreMarcaVehiculo" ColumnName="NombreMarcaVehiculo" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TModeloVehiculo">
+      <EntityTypeMapping TypeName="masterDBACModel.TModeloVehiculo">
+        <MappingFragment StoreEntitySet="TModeloVehiculo">
+          <ScalarProperty Name="idModeloVehiculo" ColumnName="idModeloVehiculo" />
+          <ScalarProperty Name="idMarcaVehiculo" ColumnName="idMarcaVehiculo" />
+          <ScalarProperty Name="NombreModelo" ColumnName="NombreModelo" />
+          <ScalarProperty Name="idTipoVehiculo" ColumnName="idTipoVehiculo" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPanel">
+      <EntityTypeMapping TypeName="masterDBACModel.TPanel">
+        <MappingFragment StoreEntitySet="TPanel">
+          <ScalarProperty Name="puertoPanel" ColumnName="puertoPanel" />
+          <ScalarProperty Name="idPanel" ColumnName="idPanel" />
+          <ScalarProperty Name="descrpcionPanel" ColumnName="descrpcionPanel" />
+          <ScalarProperty Name="direccionIP" ColumnName="direccionIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRegistroEmpleado">
+      <EntityTypeMapping TypeName="masterDBACModel.TRegistroEmpleado">
+        <MappingFragment StoreEntitySet="TRegistroEmpleado">
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="idRegistroEmpleado" ColumnName="idRegistroEmpleado" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+          <ScalarProperty Name="fechadeRegistro" ColumnName="fechadeRegistro" />
+          <ScalarProperty Name="idPanel" ColumnName="idPanel" />
+          <ScalarProperty Name="idTipoRegistro" ColumnName="idTipoRegistro" />
+          <ScalarProperty Name="descripcionRegistro" ColumnName="descripcionRegistro" />
+          <ScalarProperty Name="ObservacionesRegistro" ColumnName="ObservacionesRegistro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TTipoIdentificacion">
+      <EntityTypeMapping TypeName="masterDBACModel.TTipoIdentificacion">
+        <MappingFragment StoreEntitySet="TTipoIdentificacion">
+          <ScalarProperty Name="idTipoIdentificacion" ColumnName="idTipoIdentificacion" />
+          <ScalarProperty Name="descripcionIdentificacion" ColumnName="descripcionIdentificacion" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TTipoRegistro">
+      <EntityTypeMapping TypeName="masterDBACModel.TTipoRegistro">
+        <MappingFragment StoreEntitySet="TTipoRegistro">
+          <ScalarProperty Name="idTipoRegistro" ColumnName="idTipoRegistro" />
+          <ScalarProperty Name="TipoRegistro" ColumnName="TipoRegistro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TTipoUsuario">
+      <EntityTypeMapping TypeName="masterDBACModel.TTipoUsuario">
+        <MappingFragment StoreEntitySet="TTipoUsuario">
+          <ScalarProperty Name="idTipoUsuario" ColumnName="idTipoUsuario" />
+          <ScalarProperty Name="NombreTipoUsuario" ColumnName="NombreTipoUsuario" />
+          <ScalarProperty Name="permisos" ColumnName="permisos" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TUsuario">
+      <EntityTypeMapping TypeName="masterDBACModel.TUsuario">
+        <MappingFragment StoreEntitySet="TUsuario">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="idTipoUsuario" ColumnName="idTipoUsuario" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+          <ScalarProperty Name="fotoUsuario" ColumnName="fotoUsuario" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TVehiculo">
+      <EntityTypeMapping TypeName="masterDBACModel.TVehiculo">
+        <MappingFragment StoreEntitySet="TVehiculo">
+          <ScalarProperty Name="fechaUltOcup" ColumnName="fechaUltOcup" />
+          <ScalarProperty Name="estaOcupado" ColumnName="estaOcupado" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="idVehiculo" ColumnName="idVehiculo" />
+          <ScalarProperty Name="Placa" ColumnName="Placa" />
+          <ScalarProperty Name="idModeloVehiculo" ColumnName="idModeloVehiculo" />
+          <ScalarProperty Name="CodigodeBarras" ColumnName="CodigodeBarras" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TvehiculoParqueo">
+      <EntityTypeMapping TypeName="masterDBACModel.TvehiculoParqueo">
+        <MappingFragment StoreEntitySet="TvehiculoParqueo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="dia7" ColumnName="dia7" />
+          <ScalarProperty Name="dia6" ColumnName="dia6" />
+          <ScalarProperty Name="dia5" ColumnName="dia5" />
+          <ScalarProperty Name="dia4" ColumnName="dia4" />
+          <ScalarProperty Name="dia3" ColumnName="dia3" />
+          <ScalarProperty Name="dia2" ColumnName="dia2" />
+          <ScalarProperty Name="dia1" ColumnName="dia1" />
+          <ScalarProperty Name="idVehiculo" ColumnName="idVehiculo" />
+          <ScalarProperty Name="idParqueadero" ColumnName="idParqueadero" />
+          <ScalarProperty Name="diaSemana" ColumnName="diaSemana" />
+          <ScalarProperty Name="ObservacionesVP" ColumnName="ObservacionesVP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TVisitante">
+      <EntityTypeMapping TypeName="masterDBACModel.TVisitante">
+        <MappingFragment StoreEntitySet="TVisitante">
+          <ScalarProperty Name="telefonos" ColumnName="telefonos" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="empresa" ColumnName="empresa" />
+          <ScalarProperty Name="idVisitante" ColumnName="idVisitante" />
+          <ScalarProperty Name="nombreVisitante" ColumnName="nombreVisitante" />
+          <ScalarProperty Name="idTipoIdentificacion" ColumnName="idTipoIdentificacion" />
+          <ScalarProperty Name="identificacionVisitante" ColumnName="identificacionVisitante" />
+          <ScalarProperty Name="huella" ColumnName="huella" />
+          <ScalarProperty Name="foto" ColumnName="foto" />
+          <ScalarProperty Name="idEmpresaVisitante" ColumnName="idEmpresaVisitante" />
+          <ScalarProperty Name="observacionesVisitante" ColumnName="observacionesVisitante" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TVisitanteVisitaProgramada">
+      <EntityTypeMapping TypeName="masterDBACModel.TVisitanteVisitaProgramada">
+        <MappingFragment StoreEntitySet="TVisitanteVisitaProgramada">
+          <ScalarProperty Name="idTabla" ColumnName="idTabla" />
+          <ScalarProperty Name="ObservacionesVisita" ColumnName="ObservacionesVisita" />
+          <ScalarProperty Name="idTarjeta" ColumnName="idTarjeta" />
+          <ScalarProperty Name="tarjeta" ColumnName="tarjeta" />
+          <ScalarProperty Name="visitacumplida" ColumnName="visitacumplida" />
+          <ScalarProperty Name="idVisitante" ColumnName="idVisitante" />
+          <ScalarProperty Name="idVisitaProgramada" ColumnName="idVisitaProgramada" />
+          <ScalarProperty Name="idEmpleadoAutorizaEntrada" ColumnName="idEmpleadoAutorizaEntrada" />
+          <ScalarProperty Name="fechaLlegada" ColumnName="fechaLlegada" />
+          <ScalarProperty Name="fechaSalida" ColumnName="fechaSalida" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TVisitaProgramada">
+      <EntityTypeMapping TypeName="masterDBACModel.TVisitaProgramada">
+        <MappingFragment StoreEntitySet="TVisitaProgramada">
+          <ScalarProperty Name="IdDivisionEmpresa" ColumnName="IdDivisionEmpresa" />
+          <ScalarProperty Name="idVisitaProgramada" ColumnName="idVisitaProgramada" />
+          <ScalarProperty Name="DescripcionVisita" ColumnName="DescripcionVisita" />
+          <ScalarProperty Name="fechaInicio" ColumnName="fechaInicio" />
+          <ScalarProperty Name="fechafin" ColumnName="fechafin" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+          <ScalarProperty Name="ObservacionesVisita" ColumnName="ObservacionesVisita" />
+          <ScalarProperty Name="idEstadoVisita" ColumnName="idEstadoVisita" />
+          <ScalarProperty Name="fechadeIngreso" ColumnName="fechadeIngreso" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TParqueo">
+      <EntityTypeMapping TypeName="masterDBACModel.TParqueo">
+        <MappingFragment StoreEntitySet="TParqueo">
+          <ScalarProperty Name="ocupadopor" ColumnName="ocupadopor" />
+          <ScalarProperty Name="estaocupado" ColumnName="estaocupado" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="observacionesParqueo" ColumnName="observacionesParqueo" />
+          <ScalarProperty Name="nParqueo" ColumnName="nParqueo" />
+          <ScalarProperty Name="idParqueadero" ColumnName="idParqueadero" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRegistroVehiculo">
+      <EntityTypeMapping TypeName="masterDBACModel.TRegistroVehiculo">
+        <MappingFragment StoreEntitySet="TRegistroVehiculo">
+          <ScalarProperty Name="mregistro" ColumnName="mregistro" />
+          <ScalarProperty Name="idempleado" ColumnName="idempleado" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="ObservacionesRegistro" ColumnName="ObservacionesRegistro" />
+          <ScalarProperty Name="descripcionRegistro" ColumnName="descripcionRegistro" />
+          <ScalarProperty Name="idTipoRegistro" ColumnName="idTipoRegistro" />
+          <ScalarProperty Name="idPanel" ColumnName="idPanel" />
+          <ScalarProperty Name="fechadeRegistro" ColumnName="fechadeRegistro" />
+          <ScalarProperty Name="idVehiculo" ColumnName="idVehiculo" />
+          <ScalarProperty Name="idRegistroVehiculo" ColumnName="idRegistroVehiculo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viVehiculo">
+      <EntityTypeMapping TypeName="masterDBACModel.viVehiculo">
+        <MappingFragment StoreEntitySet="viVehiculo">
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="NombreMarcaVehiculo" ColumnName="NombreMarcaVehiculo" />
+          <ScalarProperty Name="NombreModelo" ColumnName="NombreModelo" />
+          <ScalarProperty Name="CodigodeBarras" ColumnName="CodigodeBarras" />
+          <ScalarProperty Name="Placa" ColumnName="Placa" />
+          <ScalarProperty Name="idVehiculo" ColumnName="idVehiculo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viParqueoVehiculo">
+      <EntityTypeMapping TypeName="masterDBACModel.viParqueoVehiculo">
+        <MappingFragment StoreEntitySet="viParqueoVehiculo">
+          <ScalarProperty Name="idParqueadero" ColumnName="idParqueadero" />
+          <ScalarProperty Name="idVehiculo" ColumnName="idVehiculo" />
+          <ScalarProperty Name="Domingo" ColumnName="Domingo" />
+          <ScalarProperty Name="Sábado" ColumnName="Sábado" />
+          <ScalarProperty Name="Viernes" ColumnName="Viernes" />
+          <ScalarProperty Name="Jueves" ColumnName="Jueves" />
+          <ScalarProperty Name="Miercoles" ColumnName="Miercoles" />
+          <ScalarProperty Name="Martes" ColumnName="Martes" />
+          <ScalarProperty Name="Lunes" ColumnName="Lunes" />
+          <ScalarProperty Name="Parqueadero" ColumnName="Parqueadero" />
+          <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+          <ScalarProperty Name="Placa" ColumnName="Placa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TTarjeta">
+      <EntityTypeMapping TypeName="masterDBACModel.TTarjeta">
+        <MappingFragment StoreEntitySet="TTarjeta">
+          <ScalarProperty Name="fechavisi2" ColumnName="fechavisi2" />
+          <ScalarProperty Name="fechavisi1" ColumnName="fechavisi1" />
+          <ScalarProperty Name="esutilizada" ColumnName="esutilizada" />
+          <ScalarProperty Name="esvisitante" ColumnName="esvisitante" />
+          <ScalarProperty Name="activa" ColumnName="activa" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="idHorario" ColumnName="idHorario" />
+          <ScalarProperty Name="numtarjeta" ColumnName="numtarjeta" />
+          <ScalarProperty Name="idTarjeta" ColumnName="idTarjeta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viEmpleado">
+      <EntityTypeMapping TypeName="masterDBACModel.viEmpleado">
+        <MappingFragment StoreEntitySet="viEmpleado">
+          <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+          <ScalarProperty Name="NombreCargo" ColumnName="NombreCargo" />
+          <ScalarProperty Name="NombreDivision" ColumnName="NombreDivision" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="foto" ColumnName="foto" />
+          <ScalarProperty Name="identificacion" ColumnName="identificacion" />
+          <ScalarProperty Name="descripcionIdentificacion" ColumnName="descripcionIdentificacion" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tinner">
+      <EntityTypeMapping TypeName="masterDBACModel.Tinner">
+        <MappingFragment StoreEntitySet="Tinner">
+          <ScalarProperty Name="puertoCom" ColumnName="puertoCom" />
+          <ScalarProperty Name="esinnerNet" ColumnName="esinnerNet" />
+          <ScalarProperty Name="esActivo" ColumnName="esActivo" />
+          <ScalarProperty Name="NombreInner" ColumnName="NombreInner" />
+          <ScalarProperty Name="CodeInner" ColumnName="CodeInner" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TInnerAccion">
+      <EntityTypeMapping TypeName="masterDBACModel.TInnerAccion">
+        <MappingFragment StoreEntitySet="TInnerAccion">
+          <ScalarProperty Name="Cumplido" ColumnName="Cumplido" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="CodigoAccion" ColumnName="CodigoAccion" />
+          <ScalarProperty Name="CodeInner" ColumnName="CodeInner" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TMarcacion">
+      <EntityTypeMapping TypeName="masterDBACModel.TMarcacion">
+        <MappingFragment StoreEntitySet="TMarcacion">
+          <ScalarProperty Name="idVisitanteVistaP" ColumnName="idVisitanteVistaP" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+          <ScalarProperty Name="idVisitante" ColumnName="idVisitante" />
+          <ScalarProperty Name="NoInner" ColumnName="NoInner" />
+          <ScalarProperty Name="fechaMarcacion" ColumnName="fechaMarcacion" />
+          <ScalarProperty Name="NoTarjeta" ColumnName="NoTarjeta" />
+          <ScalarProperty Name="idMarcacion" ColumnName="idMarcacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TVisitanteVisitaProgramadaLog">
+      <EntityTypeMapping TypeName="masterDBACModel.TVisitanteVisitaProgramadaLog">
+        <MappingFragment StoreEntitySet="TVisitanteVisitaProgramadaLog">
+          <ScalarProperty Name="ObservacionesVisita" ColumnName="ObservacionesVisita" />
+          <ScalarProperty Name="idTarjeta" ColumnName="idTarjeta" />
+          <ScalarProperty Name="tarjeta" ColumnName="tarjeta" />
+          <ScalarProperty Name="visitacumplida" ColumnName="visitacumplida" />
+          <ScalarProperty Name="usuarioUltimaGestion" ColumnName="usuarioUltimaGestion" />
+          <ScalarProperty Name="fechaUltimaGestion" ColumnName="fechaUltimaGestion" />
+          <ScalarProperty Name="fechaSalida" ColumnName="fechaSalida" />
+          <ScalarProperty Name="fechaLlegada" ColumnName="fechaLlegada" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="idEmpleadoAutorizaEntrada" ColumnName="idEmpleadoAutorizaEntrada" />
+          <ScalarProperty Name="idVisitaProgramada" ColumnName="idVisitaProgramada" />
+          <ScalarProperty Name="idVisitante" ColumnName="idVisitante" />
+          <ScalarProperty Name="idTabla" ColumnName="idTabla" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

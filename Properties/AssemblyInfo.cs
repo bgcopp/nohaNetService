@@ -1,0 +1,51 @@
+﻿using BGCOP.CAVTOP.BUSINESSLAYER;
+using System.Data.Metadata.Edm;
+using System.Data.Objects.DataClasses;
+using System.Diagnostics;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using System.Runtime.Versioning;
+
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCopyright("Copyright ©  2012")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyProduct("BGCOP.CAVTOP.BUSINESSLAYER")]
+[assembly: AssemblyTitle("BGCOP.CAVTOP.BUSINESSLAYER")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: CompilationRelaxations(8)]
+[assembly: ComVisible(false)]
+[assembly: Debuggable(DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TDiasHorario_THorario", "THorario", RelationshipMultiplicity.ZeroOrOne, typeof(THorario), "TDiasHorario", RelationshipMultiplicity.Many, typeof(TDiasHorario), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TDivisionEmpresa_TEmpresa", "TEmpresa", RelationshipMultiplicity.ZeroOrOne, typeof(TEmpresa), "TDivisionEmpresa", RelationshipMultiplicity.Many, typeof(TDivisionEmpresa), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TEmpleado_TCargo", "TCargo", RelationshipMultiplicity.ZeroOrOne, typeof(TCargo), "TEmpleado", RelationshipMultiplicity.Many, typeof(TEmpleado), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TEmpleado_TDivisionEmpresa", "TDivisionEmpresa", RelationshipMultiplicity.One, typeof(TDivisionEmpresa), "TEmpleado", RelationshipMultiplicity.Many, typeof(TEmpleado), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TEmpleado_TEstado", "TEstado", RelationshipMultiplicity.One, typeof(TEstado), "TEmpleado", RelationshipMultiplicity.Many, typeof(TEmpleado), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TEmpleado_THorario", "THorario", RelationshipMultiplicity.ZeroOrOne, typeof(THorario), "TEmpleado", RelationshipMultiplicity.Many, typeof(TEmpleado), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TEmpleado_TTipoIdentificacion", "TTipoIdentificacion", RelationshipMultiplicity.ZeroOrOne, typeof(TTipoIdentificacion), "TEmpleado", RelationshipMultiplicity.Many, typeof(TEmpleado), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TEmpleadoVehiculo_TEmpleado", "TEmpleado", RelationshipMultiplicity.One, typeof(TEmpleado), "TEmpleadoVehiculo", RelationshipMultiplicity.Many, typeof(TEmpleadoVehiculo), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TEmpleadoVehiculo_TVehiculo", "TVehiculo", RelationshipMultiplicity.One, typeof(TVehiculo), "TEmpleadoVehiculo", RelationshipMultiplicity.Many, typeof(TEmpleadoVehiculo), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TModeloVehiculo_MarcaVehiculo", "TMarcaVehiculo", RelationshipMultiplicity.ZeroOrOne, typeof(TMarcaVehiculo), "TModeloVehiculo", RelationshipMultiplicity.Many, typeof(TModeloVehiculo), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TModeloVehiculo_TipoVehiculo", "TipoVehiculo", RelationshipMultiplicity.ZeroOrOne, typeof(TipoVehiculo), "TModeloVehiculo", RelationshipMultiplicity.Many, typeof(TModeloVehiculo), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TRegistroEmpleado_TEmpleado", "TEmpleado", RelationshipMultiplicity.ZeroOrOne, typeof(TEmpleado), "TRegistroEmpleado", RelationshipMultiplicity.Many, typeof(TRegistroEmpleado), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TRegistroEmpleado_TTipoRegistro", "TTipoRegistro", RelationshipMultiplicity.ZeroOrOne, typeof(TTipoRegistro), "TRegistroEmpleado", RelationshipMultiplicity.Many, typeof(TRegistroEmpleado), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TRegistroVehiculo_TTipoRegistro", "TTipoRegistro", RelationshipMultiplicity.ZeroOrOne, typeof(TTipoRegistro), "TRegistroVehiculo", RelationshipMultiplicity.Many, typeof(TRegistroVehiculo), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TRegistroVehiculo_TVehiculo", "TVehiculo", RelationshipMultiplicity.ZeroOrOne, typeof(TVehiculo), "TRegistroVehiculo", RelationshipMultiplicity.Many, typeof(TRegistroVehiculo), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TUsuario_TTipoUsuario", "TTipoUsuario", RelationshipMultiplicity.ZeroOrOne, typeof(TTipoUsuario), "TUsuario", RelationshipMultiplicity.Many, typeof(TUsuario), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TVehiculo_TModeloVehiculo", "TModeloVehiculo", RelationshipMultiplicity.ZeroOrOne, typeof(TModeloVehiculo), "TVehiculo", RelationshipMultiplicity.Many, typeof(TVehiculo), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TvehiculoParqueo_Tparqueo", "TParqueo", RelationshipMultiplicity.One, typeof(TParqueo), "TvehiculoParqueo", RelationshipMultiplicity.Many, typeof(TvehiculoParqueo), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TvehiculoParqueo_TVehiculo", "TVehiculo", RelationshipMultiplicity.One, typeof(TVehiculo), "TvehiculoParqueo", RelationshipMultiplicity.Many, typeof(TvehiculoParqueo), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TVisitante_TEmpresaVisitante", "TEmpresaVisitante", RelationshipMultiplicity.One, typeof(TEmpresaVisitante), "TVisitante", RelationshipMultiplicity.Many, typeof(TVisitante), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TVisitante_TTipoIdentificacion", "TTipoIdentificacion", RelationshipMultiplicity.ZeroOrOne, typeof(TTipoIdentificacion), "TVisitante", RelationshipMultiplicity.Many, typeof(TVisitante), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TVisitanteVisitaProgramada_TEmpleado", "TEmpleado", RelationshipMultiplicity.ZeroOrOne, typeof(TEmpleado), "TVisitanteVisitaProgramada", RelationshipMultiplicity.Many, typeof(TVisitanteVisitaProgramada), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TVisitanteVisitaProgramada_TVisitante", "TVisitante", RelationshipMultiplicity.One, typeof(TVisitante), "TVisitanteVisitaProgramada", RelationshipMultiplicity.Many, typeof(TVisitanteVisitaProgramada), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TVisitanteVisitaProgramada_TVisitaProgramada", "TVisitaProgramada", RelationshipMultiplicity.One, typeof(TVisitaProgramada), "TVisitanteVisitaProgramada", RelationshipMultiplicity.Many, typeof(TVisitanteVisitaProgramada), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TVisitanteVisitaProgramadaLog_TEmpleado", "TEmpleado", RelationshipMultiplicity.ZeroOrOne, typeof(TEmpleado), "TVisitanteVisitaProgramadaLog", RelationshipMultiplicity.Many, typeof(TVisitanteVisitaProgramadaLog), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TVisitanteVisitaProgramadaLog_TVisitante", "TVisitante", RelationshipMultiplicity.One, typeof(TVisitante), "TVisitanteVisitaProgramadaLog", RelationshipMultiplicity.Many, typeof(TVisitanteVisitaProgramadaLog), true)]
+[assembly: EdmRelationship("masterDBACModel", "FK_TVisitanteVisitaProgramadaLog_TVisitaProgramada", "TVisitaProgramada", RelationshipMultiplicity.One, typeof(TVisitaProgramada), "TVisitanteVisitaProgramadaLog", RelationshipMultiplicity.Many, typeof(TVisitanteVisitaProgramadaLog), true)]
+[assembly: EdmSchema]
+[assembly: Guid("eb7dea20-5828-4abe-9acd-d9a633b39248")]
+[assembly: RuntimeCompatibility(WrapNonExceptionThrows=true)]

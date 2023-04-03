@@ -1,0 +1,945 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="masterDBACModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="masterDBACModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="masterDBACModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TCargo" EntityType="masterDBACModel.Store.TCargo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TDiasHorario" EntityType="masterDBACModel.Store.TDiasHorario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TDivisionEmpresa" EntityType="masterDBACModel.Store.TDivisionEmpresa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TEmpleado" EntityType="masterDBACModel.Store.TEmpleado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TEmpleadoVehiculo" EntityType="masterDBACModel.Store.TEmpleadoVehiculo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TEmpresa" EntityType="masterDBACModel.Store.TEmpresa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TEmpresaVisitante" EntityType="masterDBACModel.Store.TEmpresaVisitante" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TEstado" EntityType="masterDBACModel.Store.TEstado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TFestivos" EntityType="masterDBACModel.Store.TFestivos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="THorario" EntityType="masterDBACModel.Store.THorario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tinner" EntityType="masterDBACModel.Store.Tinner" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TInnerAccion" EntityType="masterDBACModel.Store.TInnerAccion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TipoVehiculo" EntityType="masterDBACModel.Store.TipoVehiculo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TMarcacion" EntityType="masterDBACModel.Store.TMarcacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TMarcaVehiculo" EntityType="masterDBACModel.Store.TMarcaVehiculo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TModeloVehiculo" EntityType="masterDBACModel.Store.TModeloVehiculo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TPanel" EntityType="masterDBACModel.Store.TPanel" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TParqueo" EntityType="masterDBACModel.Store.TParqueo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TRegistroEmpleado" EntityType="masterDBACModel.Store.TRegistroEmpleado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TRegistroVehiculo" EntityType="masterDBACModel.Store.TRegistroVehiculo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TTarjeta" EntityType="masterDBACModel.Store.TTarjeta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TTipoIdentificacion" EntityType="masterDBACModel.Store.TTipoIdentificacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TTipoRegistro" EntityType="masterDBACModel.Store.TTipoRegistro" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TTipoUsuario" EntityType="masterDBACModel.Store.TTipoUsuario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TUsuario" EntityType="masterDBACModel.Store.TUsuario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TVehiculo" EntityType="masterDBACModel.Store.TVehiculo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TvehiculoParqueo" EntityType="masterDBACModel.Store.TvehiculoParqueo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TVisitante" EntityType="masterDBACModel.Store.TVisitante" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TVisitanteVisitaProgramada" EntityType="masterDBACModel.Store.TVisitanteVisitaProgramada" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TVisitanteVisitaProgramadaLog" EntityType="masterDBACModel.Store.TVisitanteVisitaProgramadaLog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TVisitaProgramada" EntityType="masterDBACModel.Store.TVisitaProgramada" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="viEmpleado" EntityType="masterDBACModel.Store.viEmpleado" store:Type="Views" store:Schema="dbo" store:Name="viEmpleado">
+      <DefiningQuery>SELECT 
+      [viEmpleado].[idEmpleado] AS [idEmpleado], 
+      [viEmpleado].[nombre] AS [nombre], 
+      [viEmpleado].[descripcionIdentificacion] AS [descripcionIdentificacion], 
+      [viEmpleado].[identificacion] AS [identificacion], 
+      [viEmpleado].[foto] AS [foto], 
+      [viEmpleado].[RazonSocial] AS [RazonSocial], 
+      [viEmpleado].[NombreDivision] AS [NombreDivision], 
+      [viEmpleado].[NombreCargo] AS [NombreCargo], 
+      [viEmpleado].[NombreEstado] AS [NombreEstado]
+      FROM [dbo].[viEmpleado] AS [viEmpleado]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="viParqueoVehiculo" EntityType="masterDBACModel.Store.viParqueoVehiculo" store:Type="Views" store:Schema="dbo" store:Name="viParqueoVehiculo">
+      <DefiningQuery>SELECT 
+      [viParqueoVehiculo].[Placa] AS [Placa], 
+      [viParqueoVehiculo].[Modelo] AS [Modelo], 
+      [viParqueoVehiculo].[Parqueadero] AS [Parqueadero], 
+      [viParqueoVehiculo].[Lunes] AS [Lunes], 
+      [viParqueoVehiculo].[Martes] AS [Martes], 
+      [viParqueoVehiculo].[Miercoles] AS [Miercoles], 
+      [viParqueoVehiculo].[Jueves] AS [Jueves], 
+      [viParqueoVehiculo].[Viernes] AS [Viernes], 
+      [viParqueoVehiculo].[Sábado] AS [Sábado], 
+      [viParqueoVehiculo].[Domingo] AS [Domingo], 
+      [viParqueoVehiculo].[idVehiculo] AS [idVehiculo], 
+      [viParqueoVehiculo].[idParqueadero] AS [idParqueadero]
+      FROM [dbo].[viParqueoVehiculo] AS [viParqueoVehiculo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="viVehiculo" EntityType="masterDBACModel.Store.viVehiculo" store:Type="Views" store:Schema="dbo" store:Name="viVehiculo">
+      <DefiningQuery>SELECT 
+      [viVehiculo].[idVehiculo] AS [idVehiculo], 
+      [viVehiculo].[Placa] AS [Placa], 
+      [viVehiculo].[CodigodeBarras] AS [CodigodeBarras], 
+      [viVehiculo].[NombreModelo] AS [NombreModelo], 
+      [viVehiculo].[NombreMarcaVehiculo] AS [NombreMarcaVehiculo], 
+      [viVehiculo].[color] AS [color]
+      FROM [dbo].[viVehiculo] AS [viVehiculo]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_TDiasHorario_THorario" Association="masterDBACModel.Store.FK_TDiasHorario_THorario">
+      <End Role="THorario" EntitySet="THorario" />
+      <End Role="TDiasHorario" EntitySet="TDiasHorario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TDivisionEmpresa_TEmpresa" Association="masterDBACModel.Store.FK_TDivisionEmpresa_TEmpresa">
+      <End Role="TEmpresa" EntitySet="TEmpresa" />
+      <End Role="TDivisionEmpresa" EntitySet="TDivisionEmpresa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TEmpleado_TCargo" Association="masterDBACModel.Store.FK_TEmpleado_TCargo">
+      <End Role="TCargo" EntitySet="TCargo" />
+      <End Role="TEmpleado" EntitySet="TEmpleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TEmpleado_TDivisionEmpresa" Association="masterDBACModel.Store.FK_TEmpleado_TDivisionEmpresa">
+      <End Role="TDivisionEmpresa" EntitySet="TDivisionEmpresa" />
+      <End Role="TEmpleado" EntitySet="TEmpleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TEmpleado_TEstado" Association="masterDBACModel.Store.FK_TEmpleado_TEstado">
+      <End Role="TEstado" EntitySet="TEstado" />
+      <End Role="TEmpleado" EntitySet="TEmpleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TEmpleado_THorario" Association="masterDBACModel.Store.FK_TEmpleado_THorario">
+      <End Role="THorario" EntitySet="THorario" />
+      <End Role="TEmpleado" EntitySet="TEmpleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TEmpleado_TTipoIdentificacion" Association="masterDBACModel.Store.FK_TEmpleado_TTipoIdentificacion">
+      <End Role="TTipoIdentificacion" EntitySet="TTipoIdentificacion" />
+      <End Role="TEmpleado" EntitySet="TEmpleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TEmpleadoVehiculo_TEmpleado" Association="masterDBACModel.Store.FK_TEmpleadoVehiculo_TEmpleado">
+      <End Role="TEmpleado" EntitySet="TEmpleado" />
+      <End Role="TEmpleadoVehiculo" EntitySet="TEmpleadoVehiculo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TEmpleadoVehiculo_TVehiculo" Association="masterDBACModel.Store.FK_TEmpleadoVehiculo_TVehiculo">
+      <End Role="TVehiculo" EntitySet="TVehiculo" />
+      <End Role="TEmpleadoVehiculo" EntitySet="TEmpleadoVehiculo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TModeloVehiculo_MarcaVehiculo" Association="masterDBACModel.Store.FK_TModeloVehiculo_MarcaVehiculo">
+      <End Role="TMarcaVehiculo" EntitySet="TMarcaVehiculo" />
+      <End Role="TModeloVehiculo" EntitySet="TModeloVehiculo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TModeloVehiculo_TipoVehiculo" Association="masterDBACModel.Store.FK_TModeloVehiculo_TipoVehiculo">
+      <End Role="TipoVehiculo" EntitySet="TipoVehiculo" />
+      <End Role="TModeloVehiculo" EntitySet="TModeloVehiculo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TRegistroEmpleado_TEmpleado" Association="masterDBACModel.Store.FK_TRegistroEmpleado_TEmpleado">
+      <End Role="TEmpleado" EntitySet="TEmpleado" />
+      <End Role="TRegistroEmpleado" EntitySet="TRegistroEmpleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TRegistroEmpleado_TTipoRegistro" Association="masterDBACModel.Store.FK_TRegistroEmpleado_TTipoRegistro">
+      <End Role="TTipoRegistro" EntitySet="TTipoRegistro" />
+      <End Role="TRegistroEmpleado" EntitySet="TRegistroEmpleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TRegistroVehiculo_TTipoRegistro" Association="masterDBACModel.Store.FK_TRegistroVehiculo_TTipoRegistro">
+      <End Role="TTipoRegistro" EntitySet="TTipoRegistro" />
+      <End Role="TRegistroVehiculo" EntitySet="TRegistroVehiculo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TRegistroVehiculo_TVehiculo" Association="masterDBACModel.Store.FK_TRegistroVehiculo_TVehiculo">
+      <End Role="TVehiculo" EntitySet="TVehiculo" />
+      <End Role="TRegistroVehiculo" EntitySet="TRegistroVehiculo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TUsuario_TTipoUsuario" Association="masterDBACModel.Store.FK_TUsuario_TTipoUsuario">
+      <End Role="TTipoUsuario" EntitySet="TTipoUsuario" />
+      <End Role="TUsuario" EntitySet="TUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TVehiculo_TModeloVehiculo" Association="masterDBACModel.Store.FK_TVehiculo_TModeloVehiculo">
+      <End Role="TModeloVehiculo" EntitySet="TModeloVehiculo" />
+      <End Role="TVehiculo" EntitySet="TVehiculo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TvehiculoParqueo_Tparqueo" Association="masterDBACModel.Store.FK_TvehiculoParqueo_Tparqueo">
+      <End Role="TParqueo" EntitySet="TParqueo" />
+      <End Role="TvehiculoParqueo" EntitySet="TvehiculoParqueo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TvehiculoParqueo_TVehiculo" Association="masterDBACModel.Store.FK_TvehiculoParqueo_TVehiculo">
+      <End Role="TVehiculo" EntitySet="TVehiculo" />
+      <End Role="TvehiculoParqueo" EntitySet="TvehiculoParqueo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TVisitante_TTipoIdentificacion" Association="masterDBACModel.Store.FK_TVisitante_TTipoIdentificacion">
+      <End Role="TTipoIdentificacion" EntitySet="TTipoIdentificacion" />
+      <End Role="TVisitante" EntitySet="TVisitante" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TVisitanteVisitaProgramada_TEmpleado" Association="masterDBACModel.Store.FK_TVisitanteVisitaProgramada_TEmpleado">
+      <End Role="TEmpleado" EntitySet="TEmpleado" />
+      <End Role="TVisitanteVisitaProgramada" EntitySet="TVisitanteVisitaProgramada" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TVisitanteVisitaProgramada_TVisitante" Association="masterDBACModel.Store.FK_TVisitanteVisitaProgramada_TVisitante">
+      <End Role="TVisitante" EntitySet="TVisitante" />
+      <End Role="TVisitanteVisitaProgramada" EntitySet="TVisitanteVisitaProgramada" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TVisitanteVisitaProgramada_TVisitaProgramada" Association="masterDBACModel.Store.FK_TVisitanteVisitaProgramada_TVisitaProgramada">
+      <End Role="TVisitaProgramada" EntitySet="TVisitaProgramada" />
+      <End Role="TVisitanteVisitaProgramada" EntitySet="TVisitanteVisitaProgramada" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TVisitanteVisitaProgramadaLog_TEmpleado" Association="masterDBACModel.Store.FK_TVisitanteVisitaProgramadaLog_TEmpleado">
+      <End Role="TEmpleado" EntitySet="TEmpleado" />
+      <End Role="TVisitanteVisitaProgramadaLog" EntitySet="TVisitanteVisitaProgramadaLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TVisitanteVisitaProgramadaLog_TVisitante" Association="masterDBACModel.Store.FK_TVisitanteVisitaProgramadaLog_TVisitante">
+      <End Role="TVisitante" EntitySet="TVisitante" />
+      <End Role="TVisitanteVisitaProgramadaLog" EntitySet="TVisitanteVisitaProgramadaLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TVisitanteVisitaProgramadaLog_TVisitaProgramada" Association="masterDBACModel.Store.FK_TVisitanteVisitaProgramadaLog_TVisitaProgramada">
+      <End Role="TVisitaProgramada" EntitySet="TVisitaProgramada" />
+      <End Role="TVisitanteVisitaProgramadaLog" EntitySet="TVisitanteVisitaProgramadaLog" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TCargo">
+    <Key>
+      <PropertyRef Name="idCargo" />
+    </Key>
+    <Property Name="idCargo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NombreCargo" Type="nvarchar" MaxLength="50" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+  </EntityType>
+  <EntityType Name="TDiasHorario">
+    <Key>
+      <PropertyRef Name="idDiasHorario" />
+    </Key>
+    <Property Name="idDiasHorario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idHorario" Type="int" />
+    <Property Name="dia" Type="tinyint" />
+    <Property Name="entrada" Type="varchar" MaxLength="15" />
+    <Property Name="salida" Type="varchar" MaxLength="15" />
+    <Property Name="ObservacionesDia" Type="nvarchar(max)" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+  </EntityType>
+  <EntityType Name="TDivisionEmpresa">
+    <Key>
+      <PropertyRef Name="IdDivisionEmpresa" />
+    </Key>
+    <Property Name="IdDivisionEmpresa" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdEmpresa" Type="int" />
+    <Property Name="NombreDivision" Type="nvarchar" MaxLength="100" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+    <Property Name="piso" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TEmpleado">
+    <Key>
+      <PropertyRef Name="idEmpleado" />
+    </Key>
+    <Property Name="idEmpleado" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="70" />
+    <Property Name="idTipoIdentificacion" Type="int" />
+    <Property Name="identificacion" Type="nvarchar" MaxLength="25" />
+    <Property Name="Notarjeta" Type="nvarchar" MaxLength="30" />
+    <Property Name="foto" Type="image" />
+    <Property Name="idCargo" Type="int" />
+    <Property Name="idTipoEstado" Type="int" Nullable="false" />
+    <Property Name="idEmpresa" Type="int" Nullable="false" />
+    <Property Name="idDivisionEmpresa" Type="int" Nullable="false" />
+    <Property Name="idHorario" Type="int" />
+    <Property Name="observaciones" Type="nvarchar(max)" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+    <Property Name="usuarioHuella" Type="nchar" MaxLength="10" />
+    <Property Name="idTarjeta" Type="int" />
+  </EntityType>
+  <EntityType Name="TEmpleadoVehiculo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="IdEmpleado" Type="int" />
+    <Property Name="IdVehiculo" Type="int" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="TEmpresa">
+    <Key>
+      <PropertyRef Name="idEmpresa" />
+    </Key>
+    <Property Name="idEmpresa" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nit" Type="nvarchar" MaxLength="30" />
+    <Property Name="RazonSocial" Type="nvarchar" MaxLength="50" />
+    <Property Name="telefonos" Type="nvarchar" MaxLength="50" />
+    <Property Name="telContactoInterno" Type="nvarchar" MaxLength="20" />
+    <Property Name="EmpleadoContacto" Type="nvarchar" MaxLength="100" />
+    <Property Name="ObservacioneEmpresa" Type="nvarchar(max)" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+    <Property Name="CargoContacto" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TEmpresaVisitante">
+    <Key>
+      <PropertyRef Name="idEmpresaVisitante" />
+    </Key>
+    <Property Name="idEmpresaVisitante" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="razonSocialEV" Type="nvarchar" MaxLength="50" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+  </EntityType>
+  <EntityType Name="TEstado">
+    <Key>
+      <PropertyRef Name="idTipoEstado" />
+    </Key>
+    <Property Name="idTipoEstado" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NombreEstado" Type="nvarchar" MaxLength="50" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+  </EntityType>
+  <EntityType Name="TFestivos">
+    <Key>
+      <PropertyRef Name="idFestivo" />
+    </Key>
+    <Property Name="idFestivo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fechaFestivo" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="THorario">
+    <Key>
+      <PropertyRef Name="idHorario" />
+    </Key>
+    <Property Name="idHorario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NombreHorario" Type="nvarchar" MaxLength="50" />
+    <Property Name="esMaestro" Type="bit" Nullable="false" />
+    <Property Name="fechaInicio" Type="datetime" />
+    <Property Name="fechaFin" Type="datetime" />
+    <Property Name="ObservacionesHorario" Type="nvarchar(max)" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+    <Property Name="esPermanente" Type="bit" />
+  </EntityType>
+  <EntityType Name="Tinner">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CodeInner" Type="int" />
+    <Property Name="NombreInner" Type="nvarchar" MaxLength="50" />
+    <Property Name="esActivo" Type="bit" />
+    <Property Name="esinnerNet" Type="bit" />
+    <Property Name="puertoCom" Type="int" />
+  </EntityType>
+  <EntityType Name="TInnerAccion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CodeInner" Type="int" />
+    <Property Name="CodigoAccion" Type="nchar" MaxLength="10" />
+    <Property Name="fecha" Type="datetime" />
+    <Property Name="Cumplido" Type="int" />
+  </EntityType>
+  <EntityType Name="TipoVehiculo">
+    <Key>
+      <PropertyRef Name="idTipoVehiculo" />
+    </Key>
+    <Property Name="idTipoVehiculo" Type="tinyint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NombreTipoVehiculo" Type="nvarchar" MaxLength="50" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+  </EntityType>
+  <EntityType Name="TMarcacion">
+    <Key>
+      <PropertyRef Name="idMarcacion" />
+    </Key>
+    <Property Name="idMarcacion" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NoTarjeta" Type="nvarchar" MaxLength="50" />
+    <Property Name="fechaMarcacion" Type="datetime" />
+    <Property Name="NoInner" Type="nchar" MaxLength="10" />
+    <Property Name="idVisitante" Type="numeric" />
+    <Property Name="idEmpleado" Type="int" />
+    <Property Name="idVisitanteVistaP" Type="numeric" />
+  </EntityType>
+  <EntityType Name="TMarcaVehiculo">
+    <Key>
+      <PropertyRef Name="idMarcaVehiculo" />
+    </Key>
+    <Property Name="idMarcaVehiculo" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NombreMarcaVehiculo" Type="nvarchar" MaxLength="50" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+  </EntityType>
+  <EntityType Name="TModeloVehiculo">
+    <Key>
+      <PropertyRef Name="idModeloVehiculo" />
+    </Key>
+    <Property Name="idModeloVehiculo" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idMarcaVehiculo" Type="smallint" />
+    <Property Name="NombreModelo" Type="nvarchar" MaxLength="50" />
+    <Property Name="idTipoVehiculo" Type="tinyint" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+  </EntityType>
+  <EntityType Name="TPanel">
+    <Key>
+      <PropertyRef Name="idPanel" />
+    </Key>
+    <Property Name="idPanel" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="descrpcionPanel" Type="nvarchar" MaxLength="50" />
+    <Property Name="direccionIP" Type="nvarchar" MaxLength="20" />
+    <Property Name="puertoPanel" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="TParqueo">
+    <Key>
+      <PropertyRef Name="idParqueadero" />
+    </Key>
+    <Property Name="idParqueadero" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nParqueo" Type="nvarchar" MaxLength="30" />
+    <Property Name="observacionesParqueo" Type="nvarchar" MaxLength="50" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+    <Property Name="estaocupado" Type="bit" />
+    <Property Name="ocupadopor" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TRegistroEmpleado">
+    <Key>
+      <PropertyRef Name="idRegistroEmpleado" />
+    </Key>
+    <Property Name="idRegistroEmpleado" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idEmpleado" Type="int" />
+    <Property Name="fechadeRegistro" Type="datetime" />
+    <Property Name="idPanel" Type="int" />
+    <Property Name="idTipoRegistro" Type="int" />
+    <Property Name="descripcionRegistro" Type="nvarchar(max)" />
+    <Property Name="ObservacionesRegistro" Type="nvarchar(max)" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+  </EntityType>
+  <EntityType Name="TRegistroVehiculo">
+    <Key>
+      <PropertyRef Name="idRegistroVehiculo" />
+    </Key>
+    <Property Name="idRegistroVehiculo" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idVehiculo" Type="int" />
+    <Property Name="fechadeRegistro" Type="datetime" />
+    <Property Name="idPanel" Type="int" />
+    <Property Name="idTipoRegistro" Type="int" />
+    <Property Name="descripcionRegistro" Type="nvarchar(max)" />
+    <Property Name="ObservacionesRegistro" Type="nvarchar(max)" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+    <Property Name="idempleado" Type="int" />
+    <Property Name="mregistro" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TTarjeta">
+    <Key>
+      <PropertyRef Name="idTarjeta" />
+    </Key>
+    <Property Name="idTarjeta" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="numtarjeta" Type="nvarchar" MaxLength="50" />
+    <Property Name="idHorario" Type="int" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+    <Property Name="activa" Type="bit" />
+    <Property Name="esvisitante" Type="bit" />
+    <Property Name="esutilizada" Type="bit" />
+    <Property Name="fechavisi1" Type="datetime" />
+    <Property Name="fechavisi2" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TTipoIdentificacion">
+    <Key>
+      <PropertyRef Name="idTipoIdentificacion" />
+    </Key>
+    <Property Name="idTipoIdentificacion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="descripcionIdentificacion" Type="nvarchar" MaxLength="50" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+  </EntityType>
+  <EntityType Name="TTipoRegistro">
+    <Key>
+      <PropertyRef Name="idTipoRegistro" />
+    </Key>
+    <Property Name="idTipoRegistro" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TipoRegistro" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TTipoUsuario">
+    <Key>
+      <PropertyRef Name="idTipoUsuario" />
+    </Key>
+    <Property Name="idTipoUsuario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NombreTipoUsuario" Type="nvarchar" MaxLength="50" />
+    <Property Name="permisos" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+  </EntityType>
+  <EntityType Name="TUsuario">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="80" />
+    <Property Name="login" Type="nvarchar" MaxLength="50" />
+    <Property Name="password" Type="varbinary" MaxLength="255" />
+    <Property Name="idTipoUsuario" Type="int" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+    <Property Name="fotoUsuario" Type="image" />
+    <Property Name="activo" Type="smallint" />
+  </EntityType>
+  <EntityType Name="TVehiculo">
+    <Key>
+      <PropertyRef Name="idVehiculo" />
+    </Key>
+    <Property Name="idVehiculo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Placa" Type="nvarchar" MaxLength="8" />
+    <Property Name="idModeloVehiculo" Type="smallint" />
+    <Property Name="CodigodeBarras" Type="nvarchar" MaxLength="50" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+    <Property Name="color" Type="nchar" MaxLength="30" />
+    <Property Name="estaOcupado" Type="bit" />
+    <Property Name="fechaUltOcup" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TvehiculoParqueo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="idVehiculo" Type="int" />
+    <Property Name="idParqueadero" Type="int" />
+    <Property Name="diaSemana" Type="tinyint" />
+    <Property Name="ObservacionesVP" Type="nvarchar(max)" />
+    <Property Name="dia1" Type="bit" />
+    <Property Name="dia2" Type="bit" />
+    <Property Name="dia3" Type="bit" />
+    <Property Name="dia4" Type="bit" />
+    <Property Name="dia5" Type="bit" />
+    <Property Name="dia6" Type="bit" />
+    <Property Name="dia7" Type="bit" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="TVisitante">
+    <Key>
+      <PropertyRef Name="idVisitante" />
+    </Key>
+    <Property Name="idVisitante" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombreVisitante" Type="nvarchar" MaxLength="70" />
+    <Property Name="idTipoIdentificacion" Type="int" />
+    <Property Name="identificacionVisitante" Type="nvarchar" MaxLength="25" />
+    <Property Name="huella" Type="nvarchar(max)" />
+    <Property Name="foto" Type="image" />
+    <Property Name="idEmpresaVisitante" Type="int" />
+    <Property Name="observacionesVisitante" Type="nvarchar(max)" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+    <Property Name="empresa" Type="nvarchar" MaxLength="70" />
+    <Property Name="direccion" Type="nvarchar" MaxLength="100" />
+    <Property Name="telefonos" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TVisitanteVisitaProgramada">
+    <Key>
+      <PropertyRef Name="idVisitante" />
+      <PropertyRef Name="idVisitaProgramada" />
+    </Key>
+    <Property Name="idTabla" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idVisitante" Type="numeric" Nullable="false" />
+    <Property Name="idVisitaProgramada" Type="numeric" Nullable="false" />
+    <Property Name="idEmpleadoAutorizaEntrada" Type="int" />
+    <Property Name="fechaLlegada" Type="datetime" />
+    <Property Name="fechaSalida" Type="datetime" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+    <Property Name="visitacumplida" Type="bit" />
+    <Property Name="tarjeta" Type="nvarchar" MaxLength="50" />
+    <Property Name="idTarjeta" Type="int" />
+    <Property Name="ObservacionesVisita" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="TVisitanteVisitaProgramadaLog">
+    <Key>
+      <PropertyRef Name="idTabla" />
+    </Key>
+    <Property Name="idTabla" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idVisitante" Type="numeric" Nullable="false" />
+    <Property Name="idVisitaProgramada" Type="numeric" Nullable="false" />
+    <Property Name="idEmpleadoAutorizaEntrada" Type="int" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="fechaLlegada" Type="datetime" />
+    <Property Name="fechaSalida" Type="datetime" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+    <Property Name="visitacumplida" Type="bit" />
+    <Property Name="tarjeta" Type="nvarchar" MaxLength="50" />
+    <Property Name="idTarjeta" Type="int" />
+    <Property Name="ObservacionesVisita" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="TVisitaProgramada">
+    <Key>
+      <PropertyRef Name="idVisitaProgramada" />
+    </Key>
+    <Property Name="idVisitaProgramada" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DescripcionVisita" Type="nvarchar(max)" />
+    <Property Name="fechaInicio" Type="datetime" />
+    <Property Name="fechafin" Type="datetime" />
+    <Property Name="idEmpresa" Type="int" />
+    <Property Name="idEmpleado" Type="int" />
+    <Property Name="ObservacionesVisita" Type="nvarchar(max)" />
+    <Property Name="idEstadoVisita" Type="int" />
+    <Property Name="fechadeIngreso" Type="datetime" />
+    <Property Name="fechaUltimaGestion" Type="datetime" />
+    <Property Name="usuarioUltimaGestion" Type="int" />
+    <Property Name="IdDivisionEmpresa" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'masterDBAC.dbo.viEmpleado' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="viEmpleado">
+    <Key>
+      <PropertyRef Name="idEmpleado" />
+      <PropertyRef Name="nombre" />
+    </Key>
+    <Property Name="idEmpleado" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="70" />
+    <Property Name="descripcionIdentificacion" Type="nvarchar" MaxLength="50" />
+    <Property Name="identificacion" Type="nvarchar" MaxLength="25" />
+    <Property Name="foto" Type="image" />
+    <Property Name="RazonSocial" Type="nvarchar" MaxLength="50" />
+    <Property Name="NombreDivision" Type="nvarchar" MaxLength="100" />
+    <Property Name="NombreCargo" Type="nvarchar" MaxLength="50" />
+    <Property Name="NombreEstado" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'masterDBAC.dbo.viParqueoVehiculo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="viParqueoVehiculo">
+    <Key>
+      <PropertyRef Name="idVehiculo" />
+      <PropertyRef Name="idParqueadero" />
+    </Key>
+    <Property Name="Placa" Type="nvarchar" MaxLength="8" />
+    <Property Name="Modelo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Parqueadero" Type="nvarchar" MaxLength="30" />
+    <Property Name="Lunes" Type="bit" />
+    <Property Name="Martes" Type="bit" />
+    <Property Name="Miercoles" Type="bit" />
+    <Property Name="Jueves" Type="bit" />
+    <Property Name="Viernes" Type="bit" />
+    <Property Name="Sábado" Type="bit" />
+    <Property Name="Domingo" Type="bit" />
+    <Property Name="idVehiculo" Type="int" Nullable="false" />
+    <Property Name="idParqueadero" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'masterDBAC.dbo.viVehiculo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="viVehiculo">
+    <Key>
+      <PropertyRef Name="idVehiculo" />
+    </Key>
+    <Property Name="idVehiculo" Type="int" Nullable="false" />
+    <Property Name="Placa" Type="nvarchar" MaxLength="8" />
+    <Property Name="CodigodeBarras" Type="nvarchar" MaxLength="50" />
+    <Property Name="NombreModelo" Type="nvarchar" MaxLength="50" />
+    <Property Name="NombreMarcaVehiculo" Type="nvarchar" MaxLength="50" />
+    <Property Name="color" Type="nchar" MaxLength="30" />
+  </EntityType>
+  <Association Name="FK_TDiasHorario_THorario">
+    <End Role="THorario" Type="masterDBACModel.Store.THorario" Multiplicity="0..1" />
+    <End Role="TDiasHorario" Type="masterDBACModel.Store.TDiasHorario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="THorario">
+        <PropertyRef Name="idHorario" />
+      </Principal>
+      <Dependent Role="TDiasHorario">
+        <PropertyRef Name="idHorario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TDivisionEmpresa_TEmpresa">
+    <End Role="TEmpresa" Type="masterDBACModel.Store.TEmpresa" Multiplicity="0..1" />
+    <End Role="TDivisionEmpresa" Type="masterDBACModel.Store.TDivisionEmpresa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TEmpresa">
+        <PropertyRef Name="idEmpresa" />
+      </Principal>
+      <Dependent Role="TDivisionEmpresa">
+        <PropertyRef Name="IdEmpresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TEmpleado_TCargo">
+    <End Role="TCargo" Type="masterDBACModel.Store.TCargo" Multiplicity="0..1" />
+    <End Role="TEmpleado" Type="masterDBACModel.Store.TEmpleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCargo">
+        <PropertyRef Name="idCargo" />
+      </Principal>
+      <Dependent Role="TEmpleado">
+        <PropertyRef Name="idCargo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TEmpleado_TDivisionEmpresa">
+    <End Role="TDivisionEmpresa" Type="masterDBACModel.Store.TDivisionEmpresa" Multiplicity="1" />
+    <End Role="TEmpleado" Type="masterDBACModel.Store.TEmpleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TDivisionEmpresa">
+        <PropertyRef Name="IdDivisionEmpresa" />
+      </Principal>
+      <Dependent Role="TEmpleado">
+        <PropertyRef Name="idDivisionEmpresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TEmpleado_TEstado">
+    <End Role="TEstado" Type="masterDBACModel.Store.TEstado" Multiplicity="1" />
+    <End Role="TEmpleado" Type="masterDBACModel.Store.TEmpleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TEstado">
+        <PropertyRef Name="idTipoEstado" />
+      </Principal>
+      <Dependent Role="TEmpleado">
+        <PropertyRef Name="idTipoEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TEmpleado_THorario">
+    <End Role="THorario" Type="masterDBACModel.Store.THorario" Multiplicity="0..1" />
+    <End Role="TEmpleado" Type="masterDBACModel.Store.TEmpleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="THorario">
+        <PropertyRef Name="idHorario" />
+      </Principal>
+      <Dependent Role="TEmpleado">
+        <PropertyRef Name="idHorario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TEmpleado_TTipoIdentificacion">
+    <End Role="TTipoIdentificacion" Type="masterDBACModel.Store.TTipoIdentificacion" Multiplicity="0..1" />
+    <End Role="TEmpleado" Type="masterDBACModel.Store.TEmpleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TTipoIdentificacion">
+        <PropertyRef Name="idTipoIdentificacion" />
+      </Principal>
+      <Dependent Role="TEmpleado">
+        <PropertyRef Name="idTipoIdentificacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TEmpleadoVehiculo_TEmpleado">
+    <End Role="TEmpleado" Type="masterDBACModel.Store.TEmpleado" Multiplicity="0..1" />
+    <End Role="TEmpleadoVehiculo" Type="masterDBACModel.Store.TEmpleadoVehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TEmpleado">
+        <PropertyRef Name="idEmpleado" />
+      </Principal>
+      <Dependent Role="TEmpleadoVehiculo">
+        <PropertyRef Name="IdEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TEmpleadoVehiculo_TVehiculo">
+    <End Role="TVehiculo" Type="masterDBACModel.Store.TVehiculo" Multiplicity="0..1" />
+    <End Role="TEmpleadoVehiculo" Type="masterDBACModel.Store.TEmpleadoVehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TVehiculo">
+        <PropertyRef Name="idVehiculo" />
+      </Principal>
+      <Dependent Role="TEmpleadoVehiculo">
+        <PropertyRef Name="IdVehiculo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TModeloVehiculo_MarcaVehiculo">
+    <End Role="TMarcaVehiculo" Type="masterDBACModel.Store.TMarcaVehiculo" Multiplicity="0..1" />
+    <End Role="TModeloVehiculo" Type="masterDBACModel.Store.TModeloVehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TMarcaVehiculo">
+        <PropertyRef Name="idMarcaVehiculo" />
+      </Principal>
+      <Dependent Role="TModeloVehiculo">
+        <PropertyRef Name="idMarcaVehiculo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TModeloVehiculo_TipoVehiculo">
+    <End Role="TipoVehiculo" Type="masterDBACModel.Store.TipoVehiculo" Multiplicity="0..1" />
+    <End Role="TModeloVehiculo" Type="masterDBACModel.Store.TModeloVehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoVehiculo">
+        <PropertyRef Name="idTipoVehiculo" />
+      </Principal>
+      <Dependent Role="TModeloVehiculo">
+        <PropertyRef Name="idTipoVehiculo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TRegistroEmpleado_TEmpleado">
+    <End Role="TEmpleado" Type="masterDBACModel.Store.TEmpleado" Multiplicity="0..1" />
+    <End Role="TRegistroEmpleado" Type="masterDBACModel.Store.TRegistroEmpleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TEmpleado">
+        <PropertyRef Name="idEmpleado" />
+      </Principal>
+      <Dependent Role="TRegistroEmpleado">
+        <PropertyRef Name="idEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TRegistroEmpleado_TTipoRegistro">
+    <End Role="TTipoRegistro" Type="masterDBACModel.Store.TTipoRegistro" Multiplicity="0..1" />
+    <End Role="TRegistroEmpleado" Type="masterDBACModel.Store.TRegistroEmpleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TTipoRegistro">
+        <PropertyRef Name="idTipoRegistro" />
+      </Principal>
+      <Dependent Role="TRegistroEmpleado">
+        <PropertyRef Name="idTipoRegistro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TRegistroVehiculo_TTipoRegistro">
+    <End Role="TTipoRegistro" Type="masterDBACModel.Store.TTipoRegistro" Multiplicity="0..1" />
+    <End Role="TRegistroVehiculo" Type="masterDBACModel.Store.TRegistroVehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TTipoRegistro">
+        <PropertyRef Name="idTipoRegistro" />
+      </Principal>
+      <Dependent Role="TRegistroVehiculo">
+        <PropertyRef Name="idTipoRegistro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TRegistroVehiculo_TVehiculo">
+    <End Role="TVehiculo" Type="masterDBACModel.Store.TVehiculo" Multiplicity="0..1" />
+    <End Role="TRegistroVehiculo" Type="masterDBACModel.Store.TRegistroVehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TVehiculo">
+        <PropertyRef Name="idVehiculo" />
+      </Principal>
+      <Dependent Role="TRegistroVehiculo">
+        <PropertyRef Name="idVehiculo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TUsuario_TTipoUsuario">
+    <End Role="TTipoUsuario" Type="masterDBACModel.Store.TTipoUsuario" Multiplicity="0..1" />
+    <End Role="TUsuario" Type="masterDBACModel.Store.TUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TTipoUsuario">
+        <PropertyRef Name="idTipoUsuario" />
+      </Principal>
+      <Dependent Role="TUsuario">
+        <PropertyRef Name="idTipoUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TVehiculo_TModeloVehiculo">
+    <End Role="TModeloVehiculo" Type="masterDBACModel.Store.TModeloVehiculo" Multiplicity="0..1" />
+    <End Role="TVehiculo" Type="masterDBACModel.Store.TVehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TModeloVehiculo">
+        <PropertyRef Name="idModeloVehiculo" />
+      </Principal>
+      <Dependent Role="TVehiculo">
+        <PropertyRef Name="idModeloVehiculo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TvehiculoParqueo_Tparqueo">
+    <End Role="TParqueo" Type="masterDBACModel.Store.TParqueo" Multiplicity="0..1" />
+    <End Role="TvehiculoParqueo" Type="masterDBACModel.Store.TvehiculoParqueo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TParqueo">
+        <PropertyRef Name="idParqueadero" />
+      </Principal>
+      <Dependent Role="TvehiculoParqueo">
+        <PropertyRef Name="idParqueadero" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TvehiculoParqueo_TVehiculo">
+    <End Role="TVehiculo" Type="masterDBACModel.Store.TVehiculo" Multiplicity="0..1" />
+    <End Role="TvehiculoParqueo" Type="masterDBACModel.Store.TvehiculoParqueo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TVehiculo">
+        <PropertyRef Name="idVehiculo" />
+      </Principal>
+      <Dependent Role="TvehiculoParqueo">
+        <PropertyRef Name="idVehiculo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TVisitante_TTipoIdentificacion">
+    <End Role="TTipoIdentificacion" Type="masterDBACModel.Store.TTipoIdentificacion" Multiplicity="0..1" />
+    <End Role="TVisitante" Type="masterDBACModel.Store.TVisitante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TTipoIdentificacion">
+        <PropertyRef Name="idTipoIdentificacion" />
+      </Principal>
+      <Dependent Role="TVisitante">
+        <PropertyRef Name="idTipoIdentificacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TVisitanteVisitaProgramada_TEmpleado">
+    <End Role="TEmpleado" Type="masterDBACModel.Store.TEmpleado" Multiplicity="0..1" />
+    <End Role="TVisitanteVisitaProgramada" Type="masterDBACModel.Store.TVisitanteVisitaProgramada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TEmpleado">
+        <PropertyRef Name="idEmpleado" />
+      </Principal>
+      <Dependent Role="TVisitanteVisitaProgramada">
+        <PropertyRef Name="idEmpleadoAutorizaEntrada" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TVisitanteVisitaProgramada_TVisitante">
+    <End Role="TVisitante" Type="masterDBACModel.Store.TVisitante" Multiplicity="1" />
+    <End Role="TVisitanteVisitaProgramada" Type="masterDBACModel.Store.TVisitanteVisitaProgramada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TVisitante">
+        <PropertyRef Name="idVisitante" />
+      </Principal>
+      <Dependent Role="TVisitanteVisitaProgramada">
+        <PropertyRef Name="idVisitante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TVisitanteVisitaProgramada_TVisitaProgramada">
+    <End Role="TVisitaProgramada" Type="masterDBACModel.Store.TVisitaProgramada" Multiplicity="1" />
+    <End Role="TVisitanteVisitaProgramada" Type="masterDBACModel.Store.TVisitanteVisitaProgramada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TVisitaProgramada">
+        <PropertyRef Name="idVisitaProgramada" />
+      </Principal>
+      <Dependent Role="TVisitanteVisitaProgramada">
+        <PropertyRef Name="idVisitaProgramada" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TVisitanteVisitaProgramadaLog_TEmpleado">
+    <End Role="TEmpleado" Type="masterDBACModel.Store.TEmpleado" Multiplicity="0..1" />
+    <End Role="TVisitanteVisitaProgramadaLog" Type="masterDBACModel.Store.TVisitanteVisitaProgramadaLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TEmpleado">
+        <PropertyRef Name="idEmpleado" />
+      </Principal>
+      <Dependent Role="TVisitanteVisitaProgramadaLog">
+        <PropertyRef Name="idEmpleadoAutorizaEntrada" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TVisitanteVisitaProgramadaLog_TVisitante">
+    <End Role="TVisitante" Type="masterDBACModel.Store.TVisitante" Multiplicity="1" />
+    <End Role="TVisitanteVisitaProgramadaLog" Type="masterDBACModel.Store.TVisitanteVisitaProgramadaLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TVisitante">
+        <PropertyRef Name="idVisitante" />
+      </Principal>
+      <Dependent Role="TVisitanteVisitaProgramadaLog">
+        <PropertyRef Name="idVisitante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TVisitanteVisitaProgramadaLog_TVisitaProgramada">
+    <End Role="TVisitaProgramada" Type="masterDBACModel.Store.TVisitaProgramada" Multiplicity="1" />
+    <End Role="TVisitanteVisitaProgramadaLog" Type="masterDBACModel.Store.TVisitanteVisitaProgramadaLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TVisitaProgramada">
+        <PropertyRef Name="idVisitaProgramada" />
+      </Principal>
+      <Dependent Role="TVisitanteVisitaProgramadaLog">
+        <PropertyRef Name="idVisitaProgramada" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

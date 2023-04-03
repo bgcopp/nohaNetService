@@ -1,2 +1,0 @@
-# nohaNetService
-servicios noha

@@ -1,0 +1,10 @@
+C:\Soluciones\ed proteccion\OC\serv\SRC\bin\Release\BGCOP.CAVTOP.BUSINESSLAYER.dll
+C:\Soluciones\ed proteccion\OC\serv\SRC\bin\Release\BGCOP.CAVTOP.BUSINESSLAYER.pdb
+C:\Soluciones\ed proteccion\OC\serv\SRC\bin\Release\BGCOP.CAVTOP.COMMON.dll
+C:\Soluciones\ed proteccion\OC\serv\SRC\obj\Release\BGCOP.CAVTOP.BUSINESSLAYER.csproj.AssemblyReference.cache
+C:\Soluciones\ed proteccion\OC\serv\SRC\obj\Release\BGCOP.CAVTOP.BUSINESSLAYER.Properties.Resources.resources
+C:\Soluciones\ed proteccion\OC\serv\SRC\obj\Release\BGCOP.CAVTOP.BUSINESSLAYER.csproj.GenerateResource.cache
+C:\Soluciones\ed proteccion\OC\serv\SRC\obj\Release\BGCOP.CAVTOP.BUSINESSLAYER.csproj.CoreCompileInputs.cache
+C:\Soluciones\ed proteccion\OC\serv\SRC\obj\Release\BGCOP.CAVTOP.BUSINESSLAYER.csproj.CopyComplete
+C:\Soluciones\ed proteccion\OC\serv\SRC\obj\Release\BGCOP.CAVTOP.BUSINESSLAYER.dll
+C:\Soluciones\ed proteccion\OC\serv\SRC\obj\Release\BGCOP.CAVTOP.BUSINESSLAYER.pdb

@@ -1,0 +1,8 @@
+C:\Soluciones\ed proteccion\OC\serv\SRC\bin\Release\BGCOP.CAVTOP.COMMON.dll
+C:\Soluciones\ed proteccion\OC\serv\SRC\bin\Release\BGCOP.CAVTOP.COMMON.pdb
+C:\Soluciones\ed proteccion\OC\serv\SRC\bin\Release\BGCOP.CAVTOP.BUSINESSLAYER.pdb
+C:\Soluciones\ed proteccion\OC\serv\SRC\obj\Release\BGCOP.CAVTOP.COMMON.csproj.AssemblyReference.cache
+C:\Soluciones\ed proteccion\OC\serv\SRC\obj\Release\BGCOP.CAVTOP.COMMON.csproj.CoreCompileInputs.cache
+C:\Soluciones\ed proteccion\OC\serv\SRC\obj\Release\BGCOP.CAVTOP.COMMON.csproj.CopyComplete
+C:\Soluciones\ed proteccion\OC\serv\SRC\obj\Release\BGCOP.CAVTOP.COMMON.dll
+C:\Soluciones\ed proteccion\OC\serv\SRC\obj\Release\BGCOP.CAVTOP.COMMON.pdb

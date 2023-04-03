@@ -1,0 +1,21 @@
+G:\soluciones\serv\SRC\obj\Debug\BGCOP.CAVTOP.COMMON.csprojResolveAssemblyReference.cache
+G:\soluciones\serv\SRC\bin\Debug\BGCOP.CAVTOP.COMMON.dll
+G:\soluciones\serv\SRC\bin\Debug\BGCOP.CAVTOP.COMMON.pdb
+G:\soluciones\serv\SRC\obj\Debug\BGCOP.CAVTOP.COMMON.dll
+G:\soluciones\serv\SRC\obj\Debug\BGCOP.CAVTOP.COMMON.pdb
+G:\soluciones\serv\SRC\bin\Debug\BGCOP.CAVTOP.BUSINESSLAYER.pdb
+C:\ed proteccion\OC\serv\SRC\bin\Debug\BGCOP.CAVTOP.COMMON.dll
+C:\ed proteccion\OC\serv\SRC\bin\Debug\BGCOP.CAVTOP.COMMON.pdb
+C:\ed proteccion\OC\serv\SRC\obj\Debug\BGCOP.CAVTOP.COMMON.csproj.AssemblyReference.cache
+C:\ed proteccion\OC\serv\SRC\obj\Debug\BGCOP.CAVTOP.COMMON.csproj.CoreCompileInputs.cache
+C:\ed proteccion\OC\serv\SRC\obj\Debug\BGCOP.CAVTOP.COMMON.csproj.CopyComplete
+C:\ed proteccion\OC\serv\SRC\obj\Debug\BGCOP.CAVTOP.COMMON.dll
+C:\ed proteccion\OC\serv\SRC\obj\Debug\BGCOP.CAVTOP.COMMON.pdb
+C:\ed proteccion\OC\serv\SRC\bin\Debug\BGCOP.CAVTOP.BUSINESSLAYER.pdb
+C:\Soluciones\ed proteccion\OC\serv\SRC\bin\Debug\BGCOP.CAVTOP.COMMON.dll
+C:\Soluciones\ed proteccion\OC\serv\SRC\bin\Debug\BGCOP.CAVTOP.COMMON.pdb
+C:\Soluciones\ed proteccion\OC\serv\SRC\obj\Debug\BGCOP.CAVTOP.COMMON.csproj.AssemblyReference.cache
+C:\Soluciones\ed proteccion\OC\serv\SRC\obj\Debug\BGCOP.CAVTOP.COMMON.csproj.CoreCompileInputs.cache
+C:\Soluciones\ed proteccion\OC\serv\SRC\obj\Debug\BGCOP.CAVTOP.COMMON.csproj.CopyComplete
+C:\Soluciones\ed proteccion\OC\serv\SRC\obj\Debug\BGCOP.CAVTOP.COMMON.dll
+C:\Soluciones\ed proteccion\OC\serv\SRC\obj\Debug\BGCOP.CAVTOP.COMMON.pdb

@@ -1,0 +1,8 @@
+G:\soluciones\serv\SRC\obj\Debug\WCFNOHAWEB.csprojResolveAssemblyReference.cache
+G:\soluciones\serv\SRC\bin\Debug\WCFNOHAWEB.dll
+G:\soluciones\serv\SRC\bin\Debug\WCFNOHAWEB.pdb
+G:\soluciones\serv\SRC\bin\Debug\BGCOP.CAVTOP.COMMON.dll
+G:\soluciones\serv\SRC\bin\Debug\BGCOP.CAVTOP.BUSINESSLAYER.pdb
+G:\soluciones\serv\SRC\bin\Debug\BGCOP.CAVTOP.COMMON.pdb
+G:\soluciones\serv\SRC\obj\Debug\WCFNOHAWEB.dll
+G:\soluciones\serv\SRC\obj\Debug\WCFNOHAWEB.pdb
